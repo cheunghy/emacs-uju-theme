@@ -67,6 +67,13 @@
 (defvar uju-gutter-blue "#2ca7f4")
 (defvar uju-gutter-yellow "#f2da2f")
 
+(defvar uju-org-title3 "#9b8b13")
+(defvar uju-org-title2 "#af9219")
+(defvar uju-org-title1 "#c9ad24")
+(defvar uju-org-title-a "#7a0f5e")
+(defvar uju-org-scheduled "#0e267c")
+(defvar uju-org-date "#0e267c")
+
 (custom-theme-set-faces
  'uju
 ;;; basic
@@ -220,6 +227,18 @@
 
 ;;; multiple cursors
  `(mc/cursor-face ((t (:background ,uju-cursor :foreground ,uju-white, :inverse-video nil))))
+
+;;; ORG
+ `(org-level-1 ((t (:foreground ,uju-org-title1))))
+ `(org-level-2 ((t (:foreground ,uju-org-title2))))
+ `(org-level-3 ((t (:foreground ,uju-org-title-a))))
+ `(org-level-4 ((t (:foreground ,uju-org-title1))))
+ `(org-level-5 ((t (:foreground ,uju-org-title2))))
+ `(org-level-6 ((t (:foreground ,uju-org-title3))))
+ `(org-level-7 ((t (:foreground ,uju-org-title1))))
+ `(org-level-8 ((t (:foreground ,uju-org-title2))))
+ `(org-scheduled ((t (:foreground ,uju-org-scheduled))))
+ `(org-date ((t (:foreground ,uju-org-date))))
 
 ;;;;; guide-key
  `(guide-key/prefix-command-face ((t (:foreground ,uju-black))))
