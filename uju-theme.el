@@ -329,5 +329,5 @@
 ;; (custom-theme-set-variables
 ;;  'uju)
 
-(provide 'uju-theme)
+(provide-theme 'uju)
 ;;; uju-theme.el ends here
